@@ -20,5 +20,4 @@ This Chrome extension enhances the LinkedIn job search page by extracting and di
 1. Clone this repo:
 
 ```bash
-git clone https://github.com/yourusername/linkedin-experience-extractor.git
-
+git clone https://github.com/arunkls/linkedin-experience.git
