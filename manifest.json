@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Experience Extractor",
+  "version": "1.0.0",
+  "description": "Extracts required years of experience from LinkedIn job descriptions and displays them on job cards.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["*://www.linkedin.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/jobs/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_title": "LinkedIn Exp Extractor"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
+
